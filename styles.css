@@ -103,6 +103,11 @@ button {
   line-height: 17px;
 }
 
+button:hover {
+  cursor: pointer;
+  background: hsl(158, 42%, 18%);
+}
+
 button img {
   margin-right: 10px;
 }
