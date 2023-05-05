@@ -1,20 +1,116 @@
 body {
   background: hsl(30, 38%, 92%);
+  min-height: 100vh;
 }
 
 main {
   margin: auto;
+  padding-top: 75px;
+  place-items: center;
   width: 600px;
   height: 450px;
+  border-radius: 20px;
+}
+
+.card {
+  padding: 32px;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.img-responsive {
+  max-width: 300px;
+  display: block;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card {
+  background: hsl(0, 0%, 100%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 p {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+}
+
+.perfume {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: hsl(212, 21%, 14%);
+  padding-top: 20px;
+  margin: 0;
+}
+
+.description {
   font-size: 14px;
+  line-height: 23px;
+  padding: 24px 0px 29px 0px;
+  margin: 0;
+}
+
+.price {
+  margin-bottom: 24px;
+}
+
+.reduced-price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: hsl(158, 36%, 37%);
+}
+
+.rrp {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  padding: 0px 20px;
+  position: relative;
+  top: -5px;
+}
+
+button {
+  background: hsl(158, 36%, 37%);
+  border: 1px solid hsl(158, 36%, 37%);
+  border-radius: 8px;
+  color: hsl(0, 0%, 100%);
+  padding: 15px 62px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+button img {
+  margin-right: 10px;
 }
 
 footer {
   font-size: 11px;
   text-align: center;
+  margin: 60px;
 }
 
 footer a {
