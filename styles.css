@@ -1,6 +1,5 @@
 body {
   background: hsl(30, 38%, 92%);
-  min-height: 100vh;
 }
 
 main {
@@ -24,11 +23,15 @@ main {
   grid-template-columns: 1fr 1fr;
 }
 
-.img-responsive {
+.desktop-img {
   max-width: 300px;
   display: block;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+
+.mobile-img {
+  display: none;
 }
 
 .card {
@@ -48,6 +51,7 @@ p {
   line-height: 15px;
   text-transform: uppercase;
   margin: 0;
+  letter-spacing: 5px;
 }
 
 h1 {
@@ -120,4 +124,41 @@ footer {
 
 footer a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 550px) {
+  main {
+    max-width: 343px;
+    max-height: 611px;
+    margin: auto;
+    padding: 20px 0px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .desktop-img {
+    display: none;
+  }
+
+  .mobile-img {
+    display: block;
+    width: 343px;
+    height: 240px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .card {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  footer {
+    margin-top: 275px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }
